@@ -38,6 +38,13 @@ public class GameManager : MonoBehaviour {
 
         controllers = Input.GetJoystickNames();
 
+        for (int i = 0; i == controllers.Length; i++)
+        {
+            print(controllers[i]);
+        }
+        
+        
+
         //instantiate player 1 HERE
         Instantiate(player1GameObject,P1Spawn.transform.position,P1Spawn.transform.rotation);
         
