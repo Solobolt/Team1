@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour {
 
 	public GameObject enemiesKilledUIObject;
 	public int enemiesKilled = 0;
+    public int numbPlayers = 1;
 
     public string[] controllers;
     // Use this for initialization
@@ -42,6 +43,7 @@ public class GameManager : MonoBehaviour {
         
         if (controllers[1]!="")
         {
+            numbPlayers = 2;
             //instatiate player 2
             Instantiate(player2GameObject, P2Spawn.transform.position, P2Spawn.transform.rotation);
             print("Player 1:" + controllers[0]);
